@@ -30,11 +30,9 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Instala REQUERIMIENTOS
       run: |
-        # INSTALA REQUERIMIENTOS
         pip install -r requirements.txt
-    - name: Instala REQUERIMIENTOS
+    - name: Seteo de clave
       run: |
-        # Seteo de Clave sk-....
          export OPENAI_API_KEY="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"
     - name: EJECUTA CONSULTA Corriendo qa.py y como parámetro el string de la consulta.
       run: |
